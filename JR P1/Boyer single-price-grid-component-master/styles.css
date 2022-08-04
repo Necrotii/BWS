@@ -1,0 +1,134 @@
+:root {
+    --light-gray: hsl(204, 43%, 93%);
+    --cyan: hsl(179, 62%, 43%);
+    --lightercyan: hsl(179, 46%, 54%);
+    --lime-green: hsl(71, 73%, 54%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Text Styles */
+/*  Light */
+.light-header {
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 0;
+}
+.light-subheader {
+    color: var(--lime-green);
+    font-weight: 700;
+    font-size: 18px;
+}
+.light-text {
+    color: var(--grayish-blue);
+    line-height: 1.75;
+}
+
+/* Dark */
+.dark-header {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.dark-dollars {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
+}
+.dark-hiding {
+    color: var(--white);
+    opacity: 50%;
+    margin-left: 12px;
+}
+.dark-text {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.dark-smalltext {
+    color:var(--white);
+    opacity: 60%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 168%;
+}
+.dark-button{
+    background-color: var(--lime-green);
+    padding: 18px 100px;
+    margin: auto;
+    display: block;
+    margin-top: 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.10);
+    
+    color: var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Squares */
+
+.square-wrapper-prime {
+    margin: auto;
+    width: max-content;
+}
+.square-wrapper {
+    width: 750px;
+    margin: 25px;
+    margin-top: 50px;
+    box-shadow: 0 5px 20px 0 hsla(217, 22%, 67%, 0.822);
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.top-square {
+    height: 220px;
+    width: 100%;
+    padding: 40px;
+}
+.square {
+    height: 280px;
+    width: 50%;
+    padding: 40px;
+}
+.square.square-left {
+    background-color: var(--cyan);
+    
+}
+.square.square-right {
+    background-color: var(--lightercyan);
+}
+
+/* Mobile Breakpoint */
+
+@media only screen  and (max-width: 815px){
+    .square-wrapper {
+        width: 375px;
+    }
+    .top-square {
+        height: 300px;
+    }
+    .square {
+        width: 100%;
+    }
+}
