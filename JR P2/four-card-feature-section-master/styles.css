@@ -1,0 +1,166 @@
+/* TODO
+clean up
+add colored border top
+boxes text styles */
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+    --shadow: hsla(216, 22%, 67%, 0.459);
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 450px;
+}
+
+/* Header */
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.header .header-top {
+    font-weight: 200;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--dark-blue);
+}
+
+.header .header-bold {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    color: var(--dark-blue);
+}
+
+.header .header-text {
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 14px;
+    color: var(--dark-blue);
+}
+
+/* Boxes */
+.boxes-wrapper{
+    margin: auto;
+    width: max-content;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.boxes-side{
+    margin: 0px 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.boxes-middle{
+    margin: 0px 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.box {
+    width: 400px;
+    height: 275px;
+    
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+
+    border-top: 5px solid black;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px 0 var(--shadow);
+}
+
+.boxes .red {
+    border-color: var(--red);
+}
+.boxes .blue {
+    border-color: var(--blue);
+}
+.boxes .cyan {
+    border-color: var(--cyan);
+}
+.boxes .orange {
+    border-color: var(--orange);
+}
+
+.box .box-header {
+    margin-top: 0;
+    color: var(--dark-blue);
+}
+
+.box .box-text {
+    color: var(--grayish-blue);
+    font-weight: 300;
+}
+
+.box .box-image {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+/* Mobile Breakpoint */
+
+@media only screen and (max-width: 1300px){
+    .boxes-side{
+        margin: 0px 0px;
+    }
+
+    .boxes {
+        width: 400px;
+    }
+
+    .box {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .boxes-middle :first-child {
+        margin-bottom: 20px;
+    }
+
+    .header {
+        max-width: 450px;
+    }
+     
+    .header .header-top {
+        font-size: 34px;
+    }
+    
+    .header .header-bold {
+        font-size: 34px;
+    }
+}
