@@ -121,7 +121,7 @@ body {
 
 /* Mobile Breakpoint */
 
-@media only screen  and (max-width: 815px){
+@media only screen and (max-width: 815px){
     .square-wrapper {
         width: 375px;
     }
