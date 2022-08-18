@@ -1,0 +1,14 @@
+flex is good for vertical alignment
+    use flex more
+
+(container) display: flex;
+align-items: center;
+justify-content: center;
+
+
+1rem = 100% of font size in :root
+    use this :)
+    also works for scaling other stuff
+
+Next project is 3 https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl\
+    flex row -> flex column for mobile

@@ -1,0 +1,125 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+    --white: #FFFFFF;
+
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url("images/bg-desktop.svg");
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    padding: calc(15px + 2vw);
+    padding-bottom: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 4vw;
+}
+
+/* Image */
+
+.main-wrapper .example-wrapper {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-wrapper .example-wrapper .example{
+    width: 80%;
+}
+
+/* Text */
+
+.main-wrapper .text-wrapper {
+    width: 40%;
+    text-align: left;
+    color: white;
+}
+
+.main-wrapper .text-wrapper .text-header{
+    font-family: 'Poppins', sans-serif;
+    font-size: max(calc(.4rem + 2.35vw), 1.3rem);
+}
+
+/* Text Button */
+
+.main-wrapper .text-wrapper .main-button {
+    background-color: var(--white);
+    padding: 20px 0px;
+    width: 240px;
+    display: block;
+    margin-top: 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    
+    color: var(--violet);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-wrapper .text-wrapper .main-button:hover {
+    background-color: var(--magenta);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.50);
+    color: var(--white);
+}
+
+/* Socials */
+
+.socials {
+    margin-top: 50px;
+    margin-left: auto;
+}
+
+.socials .socials-icon {
+    width: 50px;
+    margin: 4px;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(163deg) brightness(100%) contrast(102%);
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+}
+
+.socials .socials-icon:hover {
+    filter: invert(87%) sepia(23%) saturate(6522%) hue-rotate(250deg) brightness(99%) contrast(84%);
+}
+
+/* Mobile Breakpoint */
+
+@media only screen and (max-width: 1000px){
+    body {
+        max-width: 800px;
+        min-width: 500px;
+        margin: auto;
+    }
+    .main-wrapper .text-wrapper {
+        text-align: center;
+    }
+    .main-wrapper .example-wrapper {
+        width: 100%;
+    }
+    .main-wrapper .text-wrapper {
+        width: 100%;
+    }
+    .main-wrapper .text-wrapper .main-button {
+        margin: auto;
+    }
+    .socials {
+        margin-right: auto;
+    }
+}
