@@ -16,7 +16,7 @@ body {
     background-color: var(--violet);
     background-image: url("images/bg-desktop.svg");
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -56,6 +56,10 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: max(calc(.4rem + 2.35vw), 1.3rem);
 }
+.main-wrapper .text-wrapper .text-body{
+    font-size: .8rem;
+}
+
 
 /* Text Button */
 
@@ -105,6 +109,8 @@ body {
     body {
         max-width: 800px;
         min-width: 500px;
+        background-image: url("images/bg-mobile.svg");
+        background-size: 100vw;
         margin: auto;
     }
     .main-wrapper .text-wrapper {
